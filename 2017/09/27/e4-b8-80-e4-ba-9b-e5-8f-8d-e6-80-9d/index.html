@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="昨天凌晨偶然翻到叶姐姐很早以前的博文，颇多感慨。        转眼一年。        正如我说过好多次的，大一一年，无怨无悔。但不可否认的是，我在技术上还是个菜鸡。翻看过去一年的博文，大抵只是些随笔。技术文章寥寥可数。        不过倒很庆幸大一能有方dalao这样的室友，能让我接触凝聚这群人，让我知道有好多好多的daolao。让我见识到叶姐姐这种已经很强但始终在努力前进的大">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些反思">
+<meta property="og:url" content="http://yoursite.com/2017/09/27/e4-b8-80-e4-ba-9b-e5-8f-8d-e6-80-9d/index.html">
+<meta property="og:site_name" content="Northity">
+<meta property="og:description" content="昨天凌晨偶然翻到叶姐姐很早以前的博文，颇多感慨。        转眼一年。        正如我说过好多次的，大一一年，无怨无悔。但不可否认的是，我在技术上还是个菜鸡。翻看过去一年的博文，大抵只是些随笔。技术文章寥寥可数。        不过倒很庆幸大一能有方dalao这样的室友，能让我接触凝聚这群人，让我知道有好多好多的daolao。让我见识到叶姐姐这种已经很强但始终在努力前进的大">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-05T15:39:17.528Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一些反思">
+<meta name="twitter:description" content="昨天凌晨偶然翻到叶姐姐很早以前的博文，颇多感慨。        转眼一年。        正如我说过好多次的，大一一年，无怨无悔。但不可否认的是，我在技术上还是个菜鸡。翻看过去一年的博文，大抵只是些随笔。技术文章寥寥可数。        不过倒很庆幸大一能有方dalao这样的室友，能让我接触凝聚这群人，让我知道有好多好多的daolao。让我见识到叶姐姐这种已经很强但始终在努力前进的大">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/09/27/e4-b8-80-e4-ba-9b-e5-8f-8d-e6-80-9d/"/>
+
+
+
+
+
+  <title>一些反思 | Northity</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Northity</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/27/e4-b8-80-e4-ba-9b-e5-8f-8d-e6-80-9d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Northity">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://northity.com/a.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Northity">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">一些反思</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-27T10:26:09+08:00">
+                2017-09-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/09/27/e4-b8-80-e4-ba-9b-e5-8f-8d-e6-80-9d/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/09/27/e4-b8-80-e4-ba-9b-e5-8f-8d-e6-80-9d/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><div>       昨天凌晨偶然翻到叶姐姐很早以前的博文，颇多感慨。</div></p>
+<p><div>       转眼一年。</div></p>
+<p><div>       正如我说过好多次的，大一一年，无怨无悔。但不可否认的是，我在技术上还是个菜鸡。翻看过去一年的博文，大抵只是些随笔。技术文章寥寥可数。</div></p>
+<p><div>       不过倒很庆幸大一能有方dalao这样的室友，能让我接触凝聚这群人，让我知道有好多好多的daolao。让我见识到叶姐姐这种已经很强但始终在努力前进的大牛。</div></p>
+<p><div>       正如叶姐姐说的那样，我也要去改变我的人生。</div></p>
+<p><div>       准备重写一个博客，这个网站正式转为随笔记录网站。</div></p>
+<p><div>       脚踏实地。</div><br><!--5f39ae17-8c62-4a45-bc43-b32064c9388a:W3siYmxvY2tUeXBlIjoicGFyYWdyYXBoIiwic3R5bGVzIjp7InRleHQtaW5kZW50IjoxfSwiYmxvY2tJZCI6IjYyNTktMTUwNjQ3ODAyMDAwNSIsInJpY2hUZXh0Ijp7ImlzUmljaFRleHQiOnRydWUsImtlZXBMaW5lQnJlYWsiOnRydWUsImRhdGEiOlt7ImNoYXIiOiLmmKgifSx7ImNoYXIiOiLlpKkifSx7ImNoYXIiOiLlh4wifSx7ImNoYXIiOiLmmagifSx7ImNoYXIiOiLlgbYifSx7ImNoYXIiOiLnhLYifSx7ImNoYXIiOiLnv7sifSx7ImNoYXIiOiLliLAifSx7ImNoYXIiOiLlj7YifSx7ImNoYXIiOiLlp5AifSx7ImNoYXIiOiLlp5AifSx7ImNoYXIiOiLlvogifSx7ImNoYXIiOiLml6kifSx7ImNoYXIiOiLku6UifSx7ImNoYXIiOiLliY0ifSx7ImNoYXIiOiLnmoQifSx7ImNoYXIiOiLljZoifSx7ImNoYXIiOiLmlocifSx7ImNoYXIiOiLvvIwifSx7ImNoYXIiOiLpoocifSx7ImNoYXIiOiLlpJoifSx7ImNoYXIiOiLmhJ8ifSx7ImNoYXIiOiLmhagifSx7ImNoYXIiOiLjgIIifV19fSx7ImJsb2NrVHlwZSI6InBhcmFncmFwaCIsInN0eWxlcyI6eyJ0ZXh0LWluZGVudCI6MX0sImJsb2NrSWQiOiI0ODEwLTE1MDY0NzgxMjY1MDMiLCJyaWNoVGV4dCI6eyJpc1JpY2hUZXh0Ijp0cnVlLCJrZWVwTGluZUJyZWFrIjp0cnVlLCJkYXRhIjpbeyJjaGFyIjoi6L2sIn0seyJjaGFyIjoi55y8In0seyJjaGFyIjoi5LiAIn0seyJjaGFyIjoi5bm0In0seyJjaGFyIjoi44CCIn1dfX0seyJibG9ja1R5cGUiOiJwYXJhZ3JhcGgiLCJzdHlsZXMiOnsidGV4dC1pbmRlbnQiOjF9LCJibG9ja0lkIjoiNTc3Ny0xNTA2NDc4MTM4OTExIiwicmljaFRleHQiOnsiaXNSaWNoVGV4dCI6dHJ1ZSwia2VlcExpbmVCcmVhayI6dHJ1ZSwiZGF0YSI6W3siY2hhciI6IuatoyJ9LHsiY2hhciI6IuWmgiJ9LHsiY2hhciI6IuaIkSJ9LHsiY2hhciI6IuivtCJ9LHsiY2hhciI6Iui/hyJ9LHsiY2hhciI6IuWlvSJ9LHsiY2hhciI6IuWkmiJ9LHsiY2hhciI6IuasoSJ9LHsiY2hhciI6IueahCJ9LHsiY2hhciI6Iu+8jCJ9LHsiY2hhciI6IuWkpyJ9LHsiY2hhciI6IuS4gCJ9LHsiY2hhciI6IuS4gCJ9LHsiY2hhciI6IuW5tCJ9LHsiY2hhciI6Iu+8jCJ9LHsiY2hhciI6IuaXoCJ9LHsiY2hhciI6IuaAqCJ9LHsiY2hhciI6IuaXoCJ9LHsiY2hhciI6IuaClCJ9LHsiY2hhciI6IuOAgiJ9LHsiY2hhciI6IuS9hiJ9LHsiY2hhciI6IuS4jSJ9LHsiY2hhciI6IuWPryJ9LHsiY2hhciI6IuWQpiJ9LHsiY2hhciI6IuiupCJ9LHsiY2hhciI6IueahCJ9LHsiY2hhciI6IuaYryJ9LHsiY2hhciI6Iu+8jCJ9LHsiY2hhciI6IuaIkSJ9LHsiY2hhciI6IuWcqCJ9LHsiY2hhciI6IuaKgCJ9LHsiY2hhciI6IuacryJ9LHsiY2hhciI6IuS4iiJ9LHsiY2hhciI6Iui/mCJ9LHsiY2hhciI6IuaYryJ9LHsiY2hhciI6IuS4qiJ9LHsiY2hhciI6IuiPnCJ9LHsiY2hhciI6Ium4oSJ9LHsiY2hhciI6IuOAgiJ9LHsiY2hhciI6Iue/uyJ9LHsiY2hhciI6IueciyJ9LHsiY2hhciI6Iui/hyJ9LHsiY2hhciI6IuWOuyJ9LHsiY2hhciI6IuS4gCJ9LHsiY2hhciI6IuW5tCJ9LHsiY2hhciI6IueahCJ9LHsiY2hhciI6IuWNmiJ9LHsiY2hhciI6IuaWhyJ9LHsiY2hhciI6Iu+8jCJ9LHsiY2hhciI6IuWkpyJ9LHsiY2hhciI6IuaKtSJ9LHsiY2hhciI6IuWPqiJ9LHsiY2hhciI6IuaYryJ9LHsiY2hhciI6IuS6myJ9LHsiY2hhciI6IumajyJ9LHsiY2hhciI6IueslCJ9LHsiY2hhciI6IuOAgiJ9LHsiY2hhciI6IuaKgCJ9LHsiY2hhciI6IuacryJ9LHsiY2hhciI6IuaWhyJ9LHsiY2hhciI6IueroCJ9LHsiY2hhciI6IuWvpSJ9LHsiY2hhciI6IuWvpSJ9LHsiY2hhciI6IuWPryJ9LHsiY2hhciI6IuaVsCJ9LHsiY2hhciI6IuOAgiJ9XX19LHsiYmxvY2tUeXBlIjoicGFyYWdyYXBoIiwic3R5bGVzIjp7InRleHQtaW5kZW50IjoxfSwiYmxvY2tJZCI6IjgwMTAtMTUwNjQ3ODMxOTAzNCIsInJpY2hUZXh0Ijp7ImlzUmljaFRleHQiOnRydWUsImtlZXBMaW5lQnJlYWsiOnRydWUsImRhdGEiOlt7ImNoYXIiOiLkuI0ifSx7ImNoYXIiOiLov4cifSx7ImNoYXIiOiLlgJIifSx7ImNoYXIiOiLlvogifSx7ImNoYXIiOiLluoYifSx7ImNoYXIiOiLlubgifSx7ImNoYXIiOiLlpKcifSx7ImNoYXIiOiLkuIAifSx7ImNoYXIiOiLog70ifSx7ImNoYXIiOiLmnIkifSx7ImNoYXIiOiLmlrkifSx7ImNoYXIiOiJkIn0seyJjaGFyIjoiYSJ9LHsiY2hhciI6ImwifSx7ImNoYXIiOiJhIn0seyJjaGFyIjoibyJ9LHsiY2hhciI6Iui/mSJ9LHsiY2hhciI6IuagtyJ9LHsiY2hhciI6IueahCJ9LHsiY2hhciI6IuWupCJ9LHsiY2hhciI6IuWPiyJ9LHsiY2hhciI6Iu+8jCJ9LHsiY2hhciI6IuiDvSJ9LHsiY2hhciI6IuiuqSJ9LHsiY2hhciI6IuaIkSJ9LHsiY2hhciI6IuaOpSJ9LHsiY2hhciI6IuinpiJ9LHsiY2hhciI6IuWHnSJ9LHsiY2hhciI6IuiBmiJ9LHsiY2hhciI6Iui/mSJ9LHsiY2hhciI6Iue+pCJ9LHsiY2hhciI6IuS6uiJ9LHsiY2hhciI6Iu+8jCJ9LHsiY2hhciI6IuiuqSJ9LHsiY2hhciI6IuaIkSJ9LHsiY2hhciI6IuefpSJ9LHsiY2hhciI6IumBkyJ9LHsiY2hhciI6IuaciSJ9LHsiY2hhciI6IuWlvSJ9LHsiY2hhciI6IuWkmiJ9LHsiY2hhciI6IuWlvSJ9LHsiY2hhciI6IuWkmiJ9LHsiY2hhciI6IueahCJ9LHsiY2hhciI6ImQifSx7ImNoYXIiOiJhIn0seyJjaGFyIjoibyJ9LHsiY2hhciI6ImwifSx7ImNoYXIiOiJhIn0seyJjaGFyIjoibyJ9LHsiY2hhciI6IuOAgiJ9LHsiY2hhciI6IuiuqSJ9LHsiY2hhciI6IuaIkSJ9LHsiY2hhciI6IuingSJ9LHsiY2hhciI6IuivhiJ9LHsiY2hhciI6IuWIsCJ9LHsiY2hhciI6IuWPtiJ9LHsiY2hhciI6IuWnkCJ9LHsiY2hhciI6IuWnkCJ9LHsiY2hhciI6Iui/mSJ9LHsiY2hhciI6IuenjSJ9LHsiY2hhciI6IuW3siJ9LHsiY2hhciI6Iue7jyJ9LHsiY2hhciI6IuW+iCJ9LHsiY2hhciI6IuW8uiJ9LHsiY2hhciI6IuS9hiJ9LHsiY2hhciI6IuWniyJ9LHsiY2hhciI6Iue7iCJ9LHsiY2hhciI6IuWcqCJ9LHsiY2hhciI6IuWKqiJ9LHsiY2hhciI6IuWKmyJ9LHsiY2hhciI6IuWJjSJ9LHsiY2hhciI6Iui/myJ9LHsiY2hhciI6IueahCJ9LHsiY2hhciI6IuWkpyJ9LHsiY2hhciI6IueJmyJ9LHsiY2hhciI6IuOAgiJ9XX19LHsiYmxvY2tUeXBlIjoicGFyYWdyYXBoIiwic3R5bGVzIjp7InRleHQtaW5kZW50IjoxfSwiYmxvY2tJZCI6IjMyNTItMTUwNjQ3ODYwNjgyOCIsInJpY2hUZXh0Ijp7ImlzUmljaFRleHQiOnRydWUsImtlZXBMaW5lQnJlYWsiOnRydWUsImRhdGEiOlt7ImNoYXIiOiLmraMifSx7ImNoYXIiOiLlpoIifSx7ImNoYXIiOiLlj7YifSx7ImNoYXIiOiLlp5AifSx7ImNoYXIiOiLlp5AifSx7ImNoYXIiOiLor7QifSx7ImNoYXIiOiLnmoQifSx7ImNoYXIiOiLpgqMifSx7ImNoYXIiOiLmoLcifSx7ImNoYXIiOiLvvIwifSx7ImNoYXIiOiLmiJEifSx7ImNoYXIiOiLkuZ8ifSx7ImNoYXIiOiLopoEifSx7ImNoYXIiOiLljrsifSx7ImNoYXIiOiLmlLkifSx7ImNoYXIiOiLlj5gifSx7ImNoYXIiOiLmiJEifSx7ImNoYXIiOiLnmoQifSx7ImNoYXIiOiLkuroifSx7ImNoYXIiOiLnlJ8ifSx7ImNoYXIiOiLjgIIifV19fSx7ImJsb2NrVHlwZSI6InBhcmFncmFwaCIsInN0eWxlcyI6eyJ0ZXh0LWluZGVudCI6MX0sImJsb2NrSWQiOiI5MDcwLTE1MDY0Nzg2ODEwNzciLCJyaWNoVGV4dCI6eyJpc1JpY2hUZXh0Ijp0cnVlLCJrZWVwTGluZUJyZWFrIjp0cnVlLCJkYXRhIjpbeyJjaGFyIjoi5YeGIn0seyJjaGFyIjoi5aSHIn0seyJjaGFyIjoi6YeNIn0seyJjaGFyIjoi5YaZIn0seyJjaGFyIjoi5LiAIn0seyJjaGFyIjoi5LiqIn0seyJjaGFyIjoi5Y2aIn0seyJjaGFyIjoi5a6iIn0seyJjaGFyIjoi77yMIn0seyJjaGFyIjoi6L+ZIn0seyJjaGFyIjoi5LiqIn0seyJjaGFyIjoi572RIn0seyJjaGFyIjoi56uZIn0seyJjaGFyIjoi5q2jIn0seyJjaGFyIjoi5byPIn0seyJjaGFyIjoi6L2sIn0seyJjaGFyIjoi5Li6In0seyJjaGFyIjoi6ZqPIn0seyJjaGFyIjoi56yUIn0seyJjaGFyIjoi6K6wIn0seyJjaGFyIjoi5b2VIn0seyJjaGFyIjoi572RIn0seyJjaGFyIjoi56uZIn0seyJjaGFyIjoi44CCIn1dfX0seyJibG9ja1R5cGUiOiJwYXJhZ3JhcGgiLCJzdHlsZXMiOnsidGV4dC1pbmRlbnQiOjF9LCJibG9ja0lkIjoiMzk0Ny0xNTA2NDc4NzcwMjkyIiwicmljaFRleHQiOnsiaXNSaWNoVGV4dCI6dHJ1ZSwia2VlcExpbmVCcmVhayI6dHJ1ZSwiZGF0YSI6W3siY2hhciI6IuiEmiJ9LHsiY2hhciI6Iui4jyJ9LHsiY2hhciI6IuWuniJ9LHsiY2hhciI6IuWcsCJ9LHsiY2hhciI6IuOAgiJ9XX19XQ==--></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/18/e6-8e-aa-e6-99-ae-e6-b9-96-e7-95-94/" rel="next" title="措普湖畔">
+                <i class="fa fa-chevron-left"></i> 措普湖畔
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/10/e9-9d-92-e6-98-a5-e6-98-af-e5-9c-ba-e6-b0-b8-e5-bf-97-e7-9a-84-e5-8a-ab-e6-95-b0/" rel="prev" title="青春是场永志的劫数">
+                青春是场永志的劫数 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://northity.com/a.jpg"
+                alt="Northity" />
+            
+              <p class="site-author-name" itemprop="name">Northity</p>
+              <p class="site-description motion-element" itemprop="description">我承诺的，定会做到</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/Northity" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                我的朋友
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://northity.com/" title="我的技术博客" target="_blank">我的技术博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://yhis.me/" title="HacL" target="_blank">HacL</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://midnighter.cn/" title="墨鱼" target="_blank">墨鱼</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://cyru1s.com/" title="cyru1s" target="_blank">cyru1s</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Northity</span>
+
+  
+</div>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytlxVSW4';
+      var conf = '85789fd263fbfafbec673fb731a7673c';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
